@@ -28,6 +28,16 @@
     <![endif]-->
     <script>
         function showConfirmation() {
+            var nameInput = document.getElementById("name-input");
+            var emailInput = document.getElementById("email-input");
+            var objectInput = document.getElementById("object-input");
+            var messageInput = document.getElementById("message-input");
+
+            nameInput.value = "";  
+            emailInput.value = ""; 
+            objectInput.value = ""; 
+            messageInput.value = "";
+
             var confirmationMessage = document.getElementById("confirmation-message");
             confirmationMessage.style.display = "block";
         }
