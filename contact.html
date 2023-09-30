@@ -27,11 +27,17 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script>
-        function hideForm() {
+        function showConfirmation() {
+            // Hide the form container
             var formContainer = document.getElementById("form-container");
             formContainer.style.display = "none";
+    
+            // Show the confirmation message
+            var confirmationMessage = document.getElementById("confirmation-message");
+            confirmationMessage.style.display = "block";
         }
     </script>
+    
     
 </head>
 
@@ -108,7 +114,7 @@
                         </div>
                     </div>
                     <div class="col-md-12">
-                        <a href="#" class="btn btn-box" onclick="hideForm()">Send</a>
+                        <a href="#" class="btn btn-box" onclick="showConfirmation()">Send</a>
                     </div>
                     <div id="confirmation-message" style="display: none;">
                         <p>Your message has been sent successfully!</p>
