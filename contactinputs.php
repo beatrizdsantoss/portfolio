@@ -26,7 +26,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $to = "beatrizdsantos1250@gmail.com";
         $subject = "Contact Form Submission";
         $messageBody = "Name: $name\nEmail: $email\nObject: $object\nMessage: $message";
-
+        
+        if (mail($to, $subject, $messageBody)) {
+            echo "Thank you! Your message has been sent.";
+        } else {
+            echo "Oops! Something went wrong while sending your message.";
+        }
     } else {
         // Display validation errors to the user
         foreach ($errors as $error) {
