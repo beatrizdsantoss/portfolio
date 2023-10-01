@@ -1,13 +1,42 @@
 <?php
+// Check if the form was submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Retrieve form data
     $name = $_POST["name"];
     $email = $_POST["email"];
     $object = $_POST["object"];
     $message = $_POST["message"];
 
-    // Your processing logic here...
+    // Perform data validation
+    $errors = array();
 
-    // For debugging, you can use var_dump or print_r to check the received data
-    var_dump($_POST);
+    if (empty($name)) {
+        $errors[] = "Name is required.";
+    }
+
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $errors[] = "Invalid email format.";
+    }
+
+    // If there are no validation errors
+    if (empty($errors)) {
+        // Perform desired actions here (e.g., send email, store data)
+        
+        // Example: Send an email
+        $to = "beatrizdsantos1250@gmail.com";
+        $subject = "Contact Form Submission";
+        $messageBody = "Name: $name\nEmail: $email\nObject: $object\nMessage: $message";
+        
+        if (mail($to, $subject, $messageBody)) {
+            echo "Thank you! Your message has been sent.";
+        } else {
+            echo "Oops! Something went wrong while sending your message.";
+        }
+    } else {
+        // Display validation errors to the user
+        foreach ($errors as $error) {
+            echo $error . "<br>";
+        }
+    }
 }
 ?>
