@@ -26,24 +26,7 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <script>
-        function showConfirmation() {
-            var nameInput = document.getElementById("name-input");
-            var emailInput = document.getElementById("email-input");
-            var objectInput = document.getElementById("object-input");
-            var messageInput = document.getElementById("message-input");
 
-            nameInput.value = "";  
-            emailInput.value = ""; 
-            objectInput.value = ""; 
-            messageInput.value = "";
-
-            var confirmationMessage = document.getElementById("confirmation-message");
-            confirmationMessage.style.display = "block";
-        }
-    </script>
-    
-    
 </head>
 
 <body>
@@ -90,59 +73,19 @@
     <!-- end top bar -->
 
     <!-- main-container -->
-    <div class="container main-container">
-        <div class="col-md-6" id="form-container">
-            <form action="contactinputs.php" method="post">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="input-contact">
-                            <input type="text" name="name" id="name-input">
-                            <span>your name</span>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="input-contact">
-                            <input type="text" name="email" id="email-input">
-                            <span>your email</span>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="input-contact">
-                            <input type="text" name="object" id="object-input">
-                            <span>object</span>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="textarea-contact">
-                            <textarea name="message" id="message-input"></textarea>
-                            <span>message</span>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <a href="#" class="btn btn-box" onclick="showConfirmation()">Send</a>
-                    </div>
-                    <div id="confirmation-message" style="display: none;">
-                        <p>Your message has been sent successfully!</p>
-                    </div>
-                    
-                </div>
-            </form>
+    <div class="col-md-6">
+        <h3 class="text-uppercase">contact me</h3>
+        <h5>Beatriz Delos Santos</h5>
+        <div class="h-30"></div>
+        <p>Please note that my standard email response time is within approximately 24 hours on business days (Monday to Friday).
+            I encourage scheduling phone calls in advance. Please schedule a phone call via email.
+        </p>
+        <div class="contact-info">
+            <p><i class="ion-android-call"></i> +1(951)-316-4315</p>
+            <p><i class="ion-ios-email"></i> beatrizdsantos1250@gmail.com</p>
+            <a href="beatrizdsantos1250@gmail.com">Send an Email</a>
+
         </div>
-
-        <div class="col-md-6">
-            <h3 class="text-uppercase">contact me</h3>
-            <h5>Beatriz Delos Santos</h5>
-            <div class="h-30"></div>
-            <p>Please note that my standard email response time is within approximately 24 hours on business days (Monday to Friday).
-                I encourage scheduling phone calls in advance. Please schedule a phone call via email.
-            </p>
-            <div class="contact-info">
-                <p><i class="ion-android-call"></i> +1(951)-316-4315</p>
-                <p><i class="ion-ios-email"></i> beatrizdsantos1250@gmail.com</p>
-            </div>
-        </div>
-
-
     </div>
     <!-- end main-container -->
 
