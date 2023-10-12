@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Box personal portfolio Template</title>
+    <title>Beatriz Delos Santos</title>
     <link rel="icon" href="img/fav.png" type="image/x-icon">
 
     <!-- Bootstrap -->
@@ -44,9 +44,6 @@
     <div class="container-fluid">
        <!-- box-header -->
         <header class="box-header">
-            <div class="box-logo">
-                <a href="index.html"><img src="img/logo.png" width="80" alt="Logo"></a>
-            </div>
             <!-- box-nav -->
             <a class="box-primary-nav-trigger" href="#0">
                 <span class="box-menu-text">Menu</span><span class="box-menu-icon"></span>
@@ -62,18 +59,9 @@
 
                 <li><a href="index.html">Intro</a></li>
                 <li><a href="about.html">About me</a></li>
-                <li><a href="services.html">services</a></li>
                 <li><a href="portfolio.html">portfolio</a> <i class="ion-ios-circle-filled color"></i></li>
                 <li><a href="contact.html">contact me</a></li>
 
-
-
-                <li class="box-label">Follow me</li>
-
-                <li class="box-social"><a href="#0"><i class="ion-social-facebook"></i></a></li>
-                <li class="box-social"><a href="#0"><i class="ion-social-instagram-outline"></i></a></li>
-                <li class="box-social"><a href="#0"><i class="ion-social-twitter"></i></a></li>
-                <li class="box-social"><a href="#0"><i class="ion-social-dribbble"></i></a></li>
             </ul>
         </nav>
         <!-- end nav -->
@@ -81,45 +69,170 @@
     
     <!-- top-bar -->
     <div class="top-bar">
-        <h1>project title</h1>
-        <p><a href="#">Home</a> / <a href="#">portfolio</a> / project title</p>
+        <h1>BellaBeat Project</h1>
+        <p><a href="portfolio.html">portfolio</a> / BellaBeat Project</p>
     </div>
     <!-- end top-bar -->
     
     <!-- main-container -->
     <div class="container main-container">
+
         <div class="col-md-12">
-            <img src="http://placehold.it/1920x1080" alt="" class="img-responsive" />
+            <h2 class="text-uppercase">BellaBeat Company</h2>
+            <h5>June 2023</h5>
             <div class="h-30"></div>
         </div>
 
         <div class="col-md-12">
-            <h3 class="text-uppercase">project title</h3>
-            <h5>Creative & Lorem ipsum dolor sit amet</h5>
-            <div class="h-30"></div>
-        </div>
+            <h4>Background:</h4>
+            <p>Bellabeat is a company catered towards women with a focus on workouts, nutritions, mindfulness techniques, and menstrual cycles.
+                Some products produced by Bellabeat include a health app, a wellness tracker (Leaf), a watch, and a waterbottle (Spring).
+                The company's mission aims to optimize a women's lifestyle and achieve their better self through their products.
+            </p>
+            <hr>
+            <h5>Goal:</h5>
+            <p>Gain customer insights and trends to predict product interactions and implement a finely targeted marketing stragety for one Bellabeat product.</p>
+            <h5>Analytics Business Task:</h5>
+            <p>Understand how users utilize non-Bellabeats smart devices based on logged data, activity, and steps.</p>
+            <h5>Limitations:</h5>
+            <p>A sampling bias is one major limitation from this dataset.
+                The survey relies on 33 participants which may possibly skew the results.
+                In addition, information about particpants weight goals and progression, age, and gender may aid valuable information that can create a more in-depth analysis.
+            </p>
+            <h5>Results/Suggestions:</h5>
+            <p>
+                Drawing insights from data unrelated to Bellabeat, there is a forecast that products designed for activity tracking may witness increased usage. 
+                These devices are employed not only for fitness purposes but also to monitor daily movements, as shown in the analysis of extended sedentary periods and a significant portion of participants engaging in low-volume steps.
+                Another notable trend is the increased activity logging in by users during weekdays, specifically from Tuesdays to Thursdays. 
+                This pattern suggests a significant user base consisting primarily of working individuals who engage with these smart devices.
+                An effective marketing strategy for the Bellabeat Health App involves delivering tailored messages to distinct user segments. 
+                Messages can be customized for users who rely on these smart devices for daily health monitoring and for those who prioritize fitness tracking. 
+                Additionally, the strategy should consider the days when users are most active in tracking their health information.
+                It should incorporate the implementation of timely reminders (particularly for weekends when users may forget) to encourage consistent activity logging.
+                </p>
+                <h5>Sources:</h5>
+                <p>Google Analytics Certification Case Study</p>
+                <hr>
+                <h4>How often do customers log activities with their smart devices?</h4>
+                <br>
+                <div>
+                    <head>
+                        <style>
+                            .image-container {
+                                display: flex; /* Use flexbox to control layout */
+                                align-items: center; /* Vertically align content */
+                            }
+                    
+                            .text {
+                                margin-left: 20px; /* Add some space between text and image */
+                                float: right; /* Float text to the right */
+                            }
+                    
+                            .image {
+                                float: left; /* Float image to the left */
+                                margin-right: 20px; /* Add some space between image and text */
+                            }
+                        </style>
+                    </head>
+                    <body>
+                        <div class="image-container">
+                            <img src="weekly_frequency.png" alt="Weekly Frequency" class="img-responsive" width="500"/>
+                            <h5 class="text">Observations:</h5>
+                            <ul lass="text"> 
+                                <li>Tuesdays, Wednesdays, and Thursdays are the days of the week where users track their performances the most.</li>
+                                    <ul>
+                                        <li>Tuesdays to Thursdays are days most people work.</li>
+                                        <li>During these days, there may be set schdules to reach deadlines and complete goals, where logging activities may be reminded more often than the weekends.</li>
+                                        <li>Weekends are typically reserved for relaxation, where there are less physical activities, therefore less logged activities.</li>
+                                    </ul>
+                            </ul>
+                        </div>
+                    </body>
+                    <br>
+                    <br>
+                </div>
+                        <!-- activity intensity -->
+                        <div class ="indent">
+                            <h4>How active are users?</h4>
+                            <br>
+                            <head>
+                                <style>
+                                    .image-container {
+                                        display: flex; /* Use flexbox to control layout */
+                                        align-items: center; /* Vertically align content */
+                                    }
+                            
+                                    .text {
+                                        margin-left: 20px; /* Add some space between text and image */
+                                        float: right; /* Float text to the right */
+                                    }
+                            
+                                    .image {
+                                        float: left; /* Float image to the left */
+                                        margin-right: 20px; /* Add some space between image and text */
+                                    }
+                                </style>
+                            </head>
+                            <body>
+                                <div class="image-container">
+                                    <img src="activityintensity_mins.png" alt="Activity Intensity" class="img-responsive" width="500"/>
+                                    <h5 class="text">Observations:</h5>
+                                    <ul class="text"> 
+                                        <li>Sedentary has the largest slice equaling to 931,738 minutes, showing that most users spend their time with no physical activity.</li>
+                                            <ul>
+                                                <li>Users possibly do not have enough time to be physically active for long periods of time (work or home environment).</li>
+                                                <li>Individuals engaged in high-intensity workouts allocate less time to physical activity due to the higher energy expenditure. More activity = less time acitivity time</li>
+                                                    <ul>
+                                                        <li>Limitation: Can't be certain unless we have data that tracks weight goal progression.</li>
+                                                    </ul>
+                                            </ul>
+                                    </ul>
+                                </div>
+                            </body>
+                            <br>
+                            <br>
+                        </div>
+                        <!-- end activity intensity -->
 
-        <div class="col-md-9">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliter enim nosmet ipsos nosse non possumus. Inscite autem medicinae et gubernationis ultimum cum ultimo sapientiae comparatur. Tecum optime, deinde etiam cum mediocri amico. Et nemo nimium beatus est; Ac ne plura complectar-sunt enim innumerabilia-, bene laudata virtus voluptatis aditus ultimum cum ultimo sapientiae Et nemo nimium beatus est </p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliter enim nosmet ipsos nosse non possumus. Inscite autem medicinae et gubernationis ultimum cum ultimo sapientiae comparatur. Tecum optime, deinde etiam cum mediocri amico. Et nemo nimium beatus est; Ac ne plura complectar-sunt enim innumerabilia </p>
-        </div>
-
-        <div class="col-md-3">
-            <ul class="cat-ul">
-                <li><i class="ion-ios-circle-filled"></i> Design</li>
-                <li><i class="ion-ios-circle-filled"></i> consectetur adipiscing</li>
-                <li><i class="ion-ios-circle-filled"></i> et gubernationis</li>
-                <li><i class="ion-ios-circle-filled"></i> Aliter enim nosmet</li>
-            </ul>
-            <div class="h-10"></div>
-            <h4>Share</h4>
-            <ul class="social-ul">
-                <li class="box-social"><a href="#0"><i class="ion-social-facebook"></i></a></li>
-                <li class="box-social"><a href="#0"><i class="ion-social-instagram-outline"></i></a></li>
-                <li class="box-social"><a href="#0"><i class="ion-social-twitter"></i></a></li>
-                <li class="box-social"><a href="#0"><i class="ion-social-dribbble"></i></a></li>
-            </ul>
+                        <!-- calories vs steps -->
+                        <div class ="indent">
+                            <h4>What is the relationship between user calories and steps?</h4>
+                            <br>
+                            <head>
+                                <style>
+                                    .image-container {
+                                        display: flex; /* Use flexbox to control layout */
+                                        align-items: center; /* Vertically align content */
+                                    }
+                            
+                                    .text {
+                                        margin-left: 20px; /* Add some space between text and image */
+                                        float: right; /* Float text to the right */
+                                    }
+                            
+                                    .image {
+                                        float: left; /* Float image to the left */
+                                        margin-right: 20px; /* Add some space between image and text */
+                                    }
+                                </style>
+                            </head>
+                            <body>
+                                <div class="image-container">
+                                    <img src="calories_steps.png" alt="Activity Intensity" class="img-responsive" width="500"/>
+                                    <h5 class="text">Observations:</h5>
+                                    <ul class="text"> 
+                                        <li>Positive correlation between calories and steps taken.</li>
+                                        <li>The more steps taken, the more calories are burned.</li>
+                                        <li>Most steps taken are between 5,000 to 10,000.</li>
+                                    </ul>
+                                </div>
+                            </body>
+                            <hr>
+                            <br>
+                        </div>
+                        <!-- end calories vs steps -->
+                    </div>
+                    <!-- end bellabeat container -->
         </div>
     </div>
     <!-- end main-container -->
@@ -128,7 +241,7 @@
     <!-- footer -->
     <footer>
         <div class="container-fluid">
-            <p class="copyright">© Box Portfolio 2016</p>
+            <p class="copyright">© Beatriz Delos Santos</p>
         </div>
     </footer>
     <!-- end footer -->

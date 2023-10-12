@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Box personal portfolio Template</title>
+    <title>Beatriz Delos Santos</title>
     <link rel="icon" href="img/fav.png" type="image/x-icon">
 
     <!-- Bootstrap -->
@@ -42,6 +42,8 @@
     <!-- end Preloader -->
 
     <div class="container-fluid">
+        <!-- box-header -->
+        <header class="box-header">
             <!-- box-nav -->
             <a class="box-primary-nav-trigger" href="#0">
                 <span class="box-menu-text">Menu</span><span class="box-menu-icon"></span>
@@ -52,11 +54,12 @@
         <!-- nav -->
         <nav>
             <ul class="box-primary-nav">
+                <li class="box-label">About me</li>
+
                 <li><a href="index.html">Intro</a></li>
                 <li><a href="about.html">About me</a></li>
                 <li><a href="portfolio.html">portfolio</a> <i class="ion-ios-circle-filled color"></i></li>
                 <li><a href="contact.html">contact me</a></li>
-
             </ul>
         </nav>
         <!-- end nav -->
@@ -65,6 +68,7 @@
     <!-- top bar -->
     <div class="top-bar">
         <h1>portfolio</h1>
+        <p>Click images below to navigate to projects.</p>
     </div>
     <!-- end top bar -->
 
@@ -77,6 +81,7 @@
                 <div class="categories-grid wow fadeInLeft">
                     <nav class="categories text-center">
                         <ul class="portfolio_filter">
+                            <li><a href="" class="active" data-filter="*">All</a></li>
                             <li><a href="" data-filter=".videogames">Videogames</a></li>
                             <li><a href="" data-filter=".superstore">Superstore</a></li>
                             <li><a href="" data-filter=".bellabeat">Bellabeat</a></li>
@@ -86,896 +91,55 @@
                 <!-- portfolio_filter -->
 
                 <!-- portfolio_container -->
-            
                 <div class="no-padding portfolio_container clearfix">
-                    <div class="bellabeat">
-                        <style>
-                            .indent {
-                                 margin-left: 150px; 
-                                margin-right: 150px;
-                            }
-                            hr {
-                                border: none; /* Remove the default border */
-                                height: 1px; /* Set the height of the line */
-                                background-color: #aaaaaa; /* Set the line color */
-                                margin: 20px 0; /* Add margin for spacing */
-                            }
-                        </style>
-                        <div class="indent">
-                            <h2>BellaBeat Company</h2>
-                            <h4>Background:</h4>
-                            <p>Bellabeat is a company catered towards women with a focus on workouts, nutritions, mindfulness techniques, and menstrual cycles.
-                            Some products produced by Bellabeat include a health app, a wellness tracker (Leaf), a watch, and a waterbottle (Spring).
-                            The company's mission aims to optimize a women's lifestyle and achieve their better self through their products.
-                            </p>
-                            <hr>
-                        </div>
-                        <div class ="indent">
-                            <h5>Goal:</h5>
-                            <p>Gain customer insights and trends to predict product interactions and implement a finely targeted marketing stragety for one Bellabeat product.</p>
-                            <h5>Analytics Business Task:</h5>
-                            <p>Understand how users utilize non-Bellabeats smart devices based on logged data, activity, and steps.</p>
-                            <h5>Limitations:</h5>
-                            <p>A sampling bias is one major limitation from this dataset.
-                                The survey relies on 33 participants which may possibly skew the results.
-                                In addition, information about particpants weight goals and progression, age, and gender may aid valuable information that can create a more in-depth analysis.
-                            </p>
-                            <h5>Results/Suggestions:</h5>
-                            <p>
-                                Drawing insights from data unrelated to Bellabeat, there is a forecast that products designed for activity tracking may witness increased usage. 
-                                These devices are employed not only for fitness purposes but also to monitor daily movements, as shown in the analysis of extended sedentary periods and a significant portion of participants engaging in low-volume steps.
-                                Another notable trend is the increased activity logging in by users during weekdays, specifically from Tuesdays to Thursdays. 
-                                This pattern suggests a significant user base consisting primarily of working individuals who engage with these smart devices.
-                                An effective marketing strategy for the Bellabeat Health App involves delivering tailored messages to distinct user segments. 
-                                Messages can be customized for users who rely on these smart devices for daily health monitoring and for those who prioritize fitness tracking. 
-                                Additionally, the strategy should consider the days when users are most active in tracking their health information.
-                                It should incorporate the implementation of timely reminders (particularly for weekends when users may forget) to encourage consistent activity logging.
-                            </p>
-                            <h5>Sources:</h5>
-                            <p>Google Analytics Certification Case Study</p>
-                            <hr>
-                        </div>
-                        <div class="indent">
-                            <h4>How often do customers log activities with their smart devices?</h4>
-                            <br>
-                        </div>
-
-                        <!-- weekly frequency -->
-                        <div class ="indent">
-                            <head>
-                                <style>
-                                    .image-container {
-                                        display: flex; /* Use flexbox to control layout */
-                                        align-items: center; /* Vertically align content */
-                                    }
-                            
-                                    .text {
-                                        margin-left: 20px; /* Add some space between text and image */
-                                        float: right; /* Float text to the right */
-                                    }
-                            
-                                    .image {
-                                        float: left; /* Float image to the left */
-                                        margin-right: 20px; /* Add some space between image and text */
-                                    }
-                                </style>
-                            </head>
-                            <body>
-                                <div class="image-container">
-                                    <img src="weekly_frequency.png" alt="Weekly Frequency" class="img-responsive" width="500"/>
-                                    <h5 class="text">Observations:</h5>
-                                    <ul class="text"> 
-                                        <li>Tuesdays, Wednesdays, and Thursdays are the days of the week where users track their performances the most.</li>
-                                            <ul>
-                                                <li>Tuesdays to Thursdays are days most people work.</li>
-                                                <li>During these days, there may be set schdules to reach deadlines and complete goals, where logging activities may be reminded more often than the weekends.</li>
-                                                <li>Weekends are typically reserved for relaxation, where there are less physical activities, therefore less logged activities.</li>
-                                            </ul>
-                                    </ul>
+                    <!-- single work -->
+                    <div class="col-md-4 col-sm-12  videogames">
+                        <a href="videogames.html" class="portfolio_item">
+                            <img src="videogames_preview.png" alt="image" class="img-responsive" />
+                            <div class="portfolio_item_hover">
+                                <div class="portfolio-border clearfix">
+                                    <div class="item_info">
+                                        <span>Videogames</span>
+                                        <em>Click Here</em>
+                                    </div>
                                 </div>
-                            </body>
-                            <br>
-                            <br>
-                        </div>
-                        <!-- end weekly frequency -->
-
-                        <!-- activity intensity -->
-                        <div class ="indent">
-                            <h4>How active are users?</h4>
-                            <br>
-                            <head>
-                                <style>
-                                    .image-container {
-                                        display: flex; /* Use flexbox to control layout */
-                                        align-items: center; /* Vertically align content */
-                                    }
-                            
-                                    .text {
-                                        margin-left: 20px; /* Add some space between text and image */
-                                        float: right; /* Float text to the right */
-                                    }
-                            
-                                    .image {
-                                        float: left; /* Float image to the left */
-                                        margin-right: 20px; /* Add some space between image and text */
-                                    }
-                                </style>
-                            </head>
-                            <body>
-                                <div class="image-container">
-                                    <img src="activityintensity_mins.png" alt="Activity Intensity" class="img-responsive" width="500"/>
-                                    <h5 class="text">Observations:</h5>
-                                    <ul class="text"> 
-                                        <li>Sedentary has the largest slice equaling to 931,738 minutes, showing that most users spend their time with no physical activity.</li>
-                                            <ul>
-                                                <li>Users possibly do not have enough time to be physically active for long periods of time (work or home environment).</li>
-                                                <li>Individuals engaged in high-intensity workouts allocate less time to physical activity due to the higher energy expenditure. More activity = less time acitivity time</li>
-                                                    <ul>
-                                                        <li>Limitation: Can't be certain unless we have data that tracks weight goal progression.</li>
-                                                    </ul>
-                                            </ul>
-                                    </ul>
-                                </div>
-                            </body>
-                            <br>
-                            <br>
-                        </div>
-                        <!-- end activity intensity -->
-
-                        <!-- calories vs steps -->
-                        <div class ="indent">
-                            <h4>What is the relationship between user calories and steps?</h4>
-                            <br>
-                            <head>
-                                <style>
-                                    .image-container {
-                                        display: flex; /* Use flexbox to control layout */
-                                        align-items: center; /* Vertically align content */
-                                    }
-                            
-                                    .text {
-                                        margin-left: 20px; /* Add some space between text and image */
-                                        float: right; /* Float text to the right */
-                                    }
-                            
-                                    .image {
-                                        float: left; /* Float image to the left */
-                                        margin-right: 20px; /* Add some space between image and text */
-                                    }
-                                </style>
-                            </head>
-                            <body>
-                                <div class="image-container">
-                                    <img src="calories_steps.png" alt="Activity Intensity" class="img-responsive" width="500"/>
-                                    <h5 class="text">Observations:</h5>
-                                    <ul class="text"> 
-                                        <li>Positive correlation between calories and steps taken.</li>
-                                        <li>The more steps taken, the more calories are burned.</li>
-                                        <li>Most steps taken are between 5,000 to 10,000.</li>
-                                    </ul>
-                                </div>
-                            </body>
-                            <hr>
-                            <br>
-                        </div>
-                        <!-- end calories vs steps -->
-                    </div>
-                    <!-- end bellabeat container -->
-                
-                    <!-- superstore filter container -->
-                    <div class="superstore">
-                        <style>
-                            .indent {
-                                margin-left: 150px; 
-                                margin-right: 150px;
-                            }
-                            hr {
-                                border: none; /* Remove the default border */
-                                height: 1px; /* Set the height of the line */
-                                background-color: #aaaaaa; /* Set the line color */
-                                margin: 20px 0; /* Add margin for spacing */
-                            }
-                        </style>
-                        <div class="indent">
-                            <h2>Superstore Giant Company</h2>
-                            <h4>Background:</h4>
-                            <p>
-                                Superstore Giant is a retail chain based across the United States that offers a variety of office supplies.
-                            </p>
-                            <hr>
-                            <h5>Goal:</h5>
-                            <p>
-                                Understand Superstore Giant products and customers for enhanced marketing strategies.
-                            </p>
-                            <h5>Analytics Business Task:</h5>
-                            <p>
-                                Discover and analyze what products, regions, categories, and customer segments Superstore Giant should target or avoid.
-                            </p>
-                            <h5>Limitations:</h5>
-                            <p>Gathering additional customer data, including demographic information such as gender and age, can significantly enhance the depth and accuracy of the analysis.</p>
-                            <h5>Results/Suggestions:</h5>
-                            <p>
-                                Based on the analysis, the Western region exhibits the highest number of orders, with individuals buying for personal purposes making up half of the customer segment, while corporations rank second in terms of the buyer segment.
-                                A marketing strategy derived from this information will involve initially partnering with businesses, offices and school districts in the Western region to strengthen customer loyalty and expand Superstore's reach. 
-                                Subsequently, we will extend collaborations to select companies and districts in other regions. 
-                                These partnerships may involve providing supplies or offering discounts on specific products and on specific periods, like back-to-school season.
-                            </p>
-                            <p>
-                                Furthermore, considering that binders have the highest sales and paper ranks as the second-highest, it reveals a complementary relationship. 
-                                Additionally, despite copiers having the highest profit margins while being the least ordered product, there exists a complementary relationship between copiers and paper. 
-                                Introducing promotional offers where copiers are discounted with the purchase of papers or binders could potentially boost copier sales. 
-                                Conversely, customers purchasing copiers may receive discounts on paper when buying at specified quantities.
-                            </p>
-                            <h5>Sources:</h5>
-                            <a href="https://www.kaggle.com/datasets/vivek468/superstore-dataset-final">Data Source</a>
-                            <br>
-                            <a href="https://www.statsamerica.org/sip/rank_list.aspx?rank_label=pop1&ct=S18 ">California's Population</a>
-                            <br>
-                            <a href="https://www.marketingprofs.com/charts/2012/9550/e-commerce-which-states-convert-most-mobile-shopping-trends#:~:text=California%20accounts%20for%20the%20plurality,%2C%20and%20Wyoming%20(0.15%25).">California's E-commerce Traffic</a>
-                            <hr>
-                        </div>
-                        
-                        <!-- statistics -->
-                        <div class ="indent">
-                            <h4>Statistics</h4>
-                            <br>
-                            <head>
-                                <style>
-                                    .image-container {
-                                        display: flex; /* Use flexbox to control layout */
-                                        align-items: center; /* Vertically align content */
-                                    }
-                            
-                                    .text {
-                                        margin-left: 20px; /* Add some space between text and image */
-                                        float: right; /* Float text to the right */
-                                    }
-                            
-                                    .image {
-                                        float: left; /* Float image to the left */
-                                        margin-right: 20px; /* Add some space between image and text */
-                                    }
-                                </style>
-                            </head>
-                            <body>
-                                <div>
-                                    <img src="superstore_stats.png" alt="Statistics" class="img-responsive" width="700"/>
-                                </div>
-                            </body>
-                            <hr>
-                        </div>
-                        <!-- statistics -->
-
-                        <!-- monthly orders -->
-                        <div class ="indent">
-                            <h4>What is the number of monthly orders?</h4>
-                            <br>
-                            <head>
-                                <style>
-                                    .image-container {
-                                        display: flex; /* Use flexbox to control layout */
-                                        align-items: center; /* Vertically align content */
-                                    }
-                            
-                                    .text {
-                                        margin-left: 20px; /* Add some space between text and image */
-                                        float: right; /* Float text to the right */
-                                    }
-                            
-                                    .image {
-                                        float: left; /* Float image to the left */
-                                        margin-right: 20px; /* Add some space between image and text */
-                                    }
-                                </style>
-                            </head>
-                            <body>
-                                <div class="image-container">
-                                    <img src="superstore_monthly_chart.png" alt="Activity Intensity" class="img-responsive" width="500"/>
-                                    <h5 class="text">Observations:</h5>
-                                    <ul class="text"> 
-                                        <li>Orders spike up in September, November, and December. 
-                                            <ul>
-                                                <li>September is when schools start, so office supply orders will rise.</li>
-                                                <li>November and December are the holidays so orders will naturally rise.</li>
-                                            </ul>
-                                        <li>Orders drop to its lowest in January and February</li>
-                                            <ul>
-                                                <li>Spending in November and December was high and as a result, consumers will save money the following months to make up for the loss.</li>
-                                            </ul>
-                                    </ul>
-                                </div>
-                            </body>
-                            <br>
-                            <br>
-                        </div>
-                        <!-- end monthly orders -->
-
-                        <!-- product orders -->
-                        <div class ="indent">
-                            <h4>What is the frequency of orders for each product?</h4>
-                            <br>
-                            <head>
-                                <style>
-                                    .image-container {
-                                        display: flex; /* Use flexbox to control layout */
-                                        align-items: center; /* Vertically align content */
-                                    }
-                            
-                                    .text {
-                                        margin-left: 20px; /* Add some space between text and image */
-                                        float: right; /* Float text to the right */
-                                    }
-                            
-                                    .image {
-                                        float: left; /* Float image to the left */
-                                        margin-right: 20px; /* Add some space between image and text */
-                                    }
-                                </style>
-                            </head>
-                            <body>
-                                <div class="image-container">
-                                    <img src="superstore_subcategory_chart.png" alt="Activity Intensity" class="img-responsive" width="500"/>
-                                    <h5 class="text">Observations:</h5>
-                                    <ul class="text"> 
-                                        <li>Binders have the highest number of orders 
-                                            <ul>
-                                                <li>Binders are commonly used in any work and school setting.</li>
-                                                <li>The number of paper ordered follow behind the number of binders ordered.
-                                                    <ul>
-                                                        <li>Paper will be sold in stacks, where a binder will need to hold only a percentage of those stacked papers.</li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        <li>Copiers have the lowest number of orders.</li>
-                                            <ul>
-                                                <li>Machines like a copier are a bigger investment for consumers but it is not something that is bought often. They are bought based on its durability.</li>
-                                            </ul>
-                                    </ul>
-                                </div>
-                            </body>
-                            <br>
-                            <br>
-                        </div>
-                        <!-- end product orders -->
-                        
-                        <!-- products, profits, discounts -->
-                        <div class ="indent">
-                            <h4>What is the frequency of orders for each product, profits, and discounts?</h4>
-                            <br>
-                            <head>
-                                <style>
-                                    .image-container {
-                                        display: flex; /* Use flexbox to control layout */
-                                        align-items: center; /* Vertically align content */
-                                    }
-                            
-                                    .text {
-                                        margin-left: 20px; /* Add some space between text and image */
-                                        float: right; /* Float text to the right */
-                                    }
-                            
-                                    .image {
-                                        float: left; /* Float image to the left */
-                                        margin-right: 20px; /* Add some space between image and text */
-                                    }
-                                </style>
-                            </head>
-                            <body>
-                                <div class="image-container">
-                                    <img src="superstore_prod_prof_dis_chart.png" alt="Products, profits, discounts" class="img-responsive" width="500"/>
-                                    <h5 class="text">Observations:</h5>
-                                    <ul class="text"> 
-                                        <li>Copiers have the least number of orders but earned the most profits.</li>
-                                            <ul>
-                                                <li>Copiers are a long term appliance investment, where customers buy it once (or until a new copier is needed) for a high price.</li>
-                                            </ul>
-                                        <li>Tables earn negative profits.</li>
-                                        <ul>
-                                            <li>The negative profits may be due to a high manufacturing cost and low demand.</li>
-                                        </ul>
-                                        <li>Binders have the highest amount of discounts with the highest amount of orders, but profits aren't significant.</li>
-                                            <ul>
-                                                <li>The discounts may be affecting the amount of profits earned.</li>
-                                            </ul>
-                                    </ul>
-                                </div>
-                            </body>
-                            <br>
-                            <br>
-                        </div>
-                        <!-- end products, profits, discounts -->
-                        
-                        <!-- orders in each state -->
-                        <div class ="indent">
-                            <h4>How many orders does the company recieve from each state?</h4>
-                            <br>
-                            <head>
-                                <style>
-                                    .image-container {
-                                        display: flex; /* Use flexbox to control layout */
-                                        align-items: center; /* Vertically align content */
-                                    }
-                            
-                                    .text {
-                                        margin-left: 20px; /* Add some space between text and image */
-                                        float: right; /* Float text to the right */
-                                    }
-                            
-                                    .image {
-                                        float: left; /* Float image to the left */
-                                        margin-right: 20px; /* Add some space between image and text */
-                                    }
-                                </style>
-                            </head>
-                            <body>
-                                <div class="image-container">
-                                    <img src="superstore_state_freq_chart.png" alt="Number of each per state" class="img-responsive" width="500"/>
-                                    <h5 class="text">Observations:</h5>
-                                    <ul class="text"> 
-                                        <li>Most orders come from California.</li>
-                                            <ul>
-                                                <li>California has the highest population out of all 50 states. 
-                                                    <a href="https://www.statsamerica.org/sip/rank_list.aspx?rank_label=pop1&ct=S18">[Source]</a>
-                                                </li>
-                                                <li>California has the highest e-commerce traffic.
-                                                    <a href="https://www.marketingprofs.com/charts/2012/9550/e-commerce-which-states-convert-most-mobile-shopping-trends#:~:text=California%20accounts%20for%20the%20plurality,%2C%20and%20Wyoming%20(0.15%25).">[Source]</a>
-                                                </li>
-                                                <li>There is a vast majority of companies, startups, and offices.</li>
-                                                
-                                            </ul>
-                                        <li>Second most ordered is from New York, and third is from Texas.</li>
-                                    </ul>
-                                </div>
-                            </body>
-                            <br>
-                            <br>
-                        </div>
-                        <!-- end orders of each state -->
-
-                        <!-- orders in each region -->
-                        <div class ="indent">
-                            <h4>How many orders does the company recieve from each region?</h4>
-                            <br>
-                            <head>
-                                <style>
-                                    .image-container {
-                                        display: flex; /* Use flexbox to control layout */
-                                        align-items: center; /* Vertically align content */
-                                    }
-                            
-                                    .text {
-                                        margin-left: 20px; /* Add some space between text and image */
-                                        float: right; /* Float text to the right */
-                                    }
-                            
-                                    .image {
-                                        float: left; /* Float image to the left */
-                                        margin-right: 20px; /* Add some space between image and text */
-                                    }
-                                </style>
-                            </head>
-                            <body>
-                                <div class="image-container">
-                                    <img src="superstore_region_freq.png" alt="Number of each region" class="img-responsive" width="500"/>
-                                    <h5 class="text">Observations:</h5>
-                                    <ul class="text"> 
-                                        <li>The most orders are from the west region.</li>
-                                            <ul>
-                                                <li>This is where California resides, the state with the most orders.</li>
-                                            </ul>
-                                        <li>The least orders are from the south region.</li>
-                                    </ul>
-                                </div>
-                            </body>
-                            <br>
-                            <br>
-                        </div>
-                        <!-- end orders of each region -->
-
-                        <!-- buyers per segment -->
-                        <div class ="indent">
-                            <h4>What do customers buy the most?</h4>
-                            <br>
-                            <head>
-                                <style>
-                                    .image-container {
-                                        display: flex; /* Use flexbox to control layout */
-                                        align-items: center; /* Vertically align content */
-                                    }
-                            
-                                    .text {
-                                        margin-left: 20px; /* Add some space between text and image */
-                                        float: right; /* Float text to the right */
-                                    }
-                            
-                                    .image {
-                                        float: left; /* Float image to the left */
-                                        margin-right: 20px; /* Add some space between image and text */
-                                    }
-                                </style>
-                            </head>
-                            <body>
-                                <div class="image-container">
-                                    <img src="superstore_segment_chart.png" alt="buyers per segment" class="img-responsive" width="500"/>
-                                    <h5 class="text">Observations:</h5>
-                                    <ul class="text"> 
-                                        <li>About half the buyers are consumers who buy for personal reasons.</li>
-                                        <ul>
-                                            <li>This includes students and teachers.</li>
-                                        </ul>
-                                    </ul>
-                                </div>
-                            </body>
-                            <hr>
-                            <br>
-                        </div>
-                        <!-- end buyers per segment -->
-
-                    </div>
-                    <!-- end superstore container-->
-                     
-                    <!-- videogame container -->
-                    <div class="videogames">
-                        <style>
-                            .indent {
-                                margin-left: 150px; 
-                                margin-right: 150px;
-                            }
-                            hr {
-                                border: none; /* Remove the default border */
-                                height: 1px; /* Set the height of the line */
-                                background-color: #aaaaaa; /* Set the line color */
-                                margin: 20px 0; /* Add margin for spacing */
-                            }
-                        </style>
-                        <div class="indent">
-                            <h2>The Videogame Market</h2>
-                            <h4>Background:</h4>
-                            <p>
-                                The videogame market has grown over the years dating back to the late 1900s (from the dataset)
-                                and is expected to compound grow for the coming years. The dataset ranges globally and include various genres and gaming platforms.
-                            </p>
-                            <hr>
-                        </div>
-                            <div class ="indent">
-                                <h5>Goal:</h5>
-                                <p>
-                                    Find trends and patterns from historical data about the videogame market up to the year 2017. 
-                                    Understand why the videogame industry is thriving and will continue to flourish.
-                                </p>
-                                <h5>Analytics Business Task:</h5>
-                                <p>
-                                    Analyze the sale performances based on year, brand, region, and genre to gain insights on historical videogame market.
-                                </p>
-                                <h5>Limitations:</h5>
-                                <p>To enhance the depth of the data analysis, additiontional information about videogame prices and its associated profits can unlock more patterns that the current data may not display. 
-                                    Furthermore, missing data was discovered and was dealt with by inputting data found through research and carefully removing entries that was not relevant (265 out of 16,598 entries deleted).
-                                </p>
-                                <h5>Results/Suggestions:</h5>
-                                <p>With continous advancements in technology, it is undeniable that videogame industry will progress in the coming years with more advanced graphics, user experience, and new ways to keep players entertained. 
-                                    The supply and demand for videogames has been on the raise since the late 1900s and is predicted to continue based on the analysis below. 
-                                    Action games have the most sales out of 12 different genres due to the balance between challenges and room for progression that players seem to be invested in with their time and money. 
-                                    Multiplayer games (includes most of the top videogame genres), have higher sales as players invite others and foster more interactions. 
-                                    As videogames become more culturally accepted and proceeds to improve, the industry is destined for a tremendous growth. 
-                                    Companies in the industry and new creators must be viligant in market changes and trends.
-                                </p>
-                                <h5>Sources:</h5>
-                                <a href="https://www.kaggle.com/datasets/gregorut/videogamesales">Data Source</a>
-                                <br>
-                                <a href="https://www.grandviewresearch.com/industry-analysis/video-game-market">Background on the Videogame Market</a>
-                                <hr>
-                        </div>
-
-                        <!-- statistics -->
-                        <div class ="indent">
-                            <h4>Statistics</h4>
-                            <h5>Max and Min Sales (Millions)</h5>
-                            <img src="max_min_sales_vg.png" alt="Max and Min Sales" class="img-responsive" width="250"/>
-                            <br>
-                            <h5>Total Sales (Millions)</h5>
-                            <img src="total_sales_vg.png" alt="Total Sales" class="img-responsive" width="250"/>
-                            <br>
-                            <h5>Average Sales (Millions)</h5>
-                            <img src="avg_sales_vg.png" alt="Average Sales" class="img-responsive" width="300"/>
-                            <br>
-                            <h5>Standard Deviation for Sales (Millions)</h5>
-                            <img src="std_vg.png" alt="Standard Deviation for Sales" class="img-responsive" width="350"/>
-                            <hr>
-                        </div>
-                        <!-- end statistics -->
-
-                        <!-- genre frequency -->
-                        <div class ="indent">
-                            <h4>Which genre has been produced the most?</h4>
-                            <br>
-                            <head>
-                                <style>
-                                    .image-container {
-                                        display: flex; /* Use flexbox to control layout */
-                                        align-items: center; /* Vertically align content */
-                                    }
-                            
-                                    .text {
-                                        margin-left: 20px; /* Add some space between text and image */
-                                        float: right; /* Float text to the right */
-                                    }
-                            
-                                    .image {
-                                        float: left; /* Float image to the left */
-                                        margin-right: 20px; /* Add some space between image and text */
-                                    }
-                                </style>
-                            </head>
-                            <body>
-                                <div class="image-container">
-                                    <img src="genre_freq_vg.png" alt="Genre Frequency" class="img-responsive" width="600"/>
-                                    <h5 class="text">Observations:</h5>
-                                    <ul class="text"> 
-                                        <li>Action video games was most produced between the years 1975 and 2017.
-                                            <ul>
-                                                <li>High demand for action games.</li>
-                                                <li>Why are action games produced the most?</li>
-                                                    <ul>
-                                                        <li>The difficulty and competitiveness of the game may persuade the player to make in-game purchases.</li>
-                                                        <li>The more money the game makes, the more likely the company will produce more action games.</li>
-                                                    </ul>
-                                            </ul>
-                                        </li>
-                                        <li>Least produced genre are puzzle games.</li>
-                                    </ul>
-                                </div>
-                            </body>
-                            <br>
-                            <br>
-                        </div>
-                        <!-- genre frequency -->
-
-                        <!-- genre and sales -->
-                        <div class ="indent">
-                            <h4>Which genre has the most sales?</h4>
-                            <br>
-                            <head>
-                                <style>
-                                    .image-container {
-                                        display: flex; /* Use flexbox to control layout */
-                                        align-items: center; /* Vertically align content */
-                                    }
-                            
-                                    .text {
-                                        margin-left: 20px; /* Add some space between text and image */
-                                        float: right; /* Float text to the right */
-                                    }
-                            
-                                    .image {
-                                        float: left; /* Float image to the left */
-                                        margin-right: 20px; /* Add some space between image and text */
-                                    }
-                                </style>
-                            </head>
-                            <body>
-                                <div class="image-container">
-                                    <img src="genre_sales_vg.png" alt="Genre and Sales" class="img-responsive" width="600"/>
-                                    <h5 class="text">Observations:</h5>
-                                    <ul class="text"> 
-                                        <li>Action has the most global sales between 1975 to 2017.</li>
-                                            <ul>
-                                                <li>Why are action games so popular?</li>
-                                                <ul>
-                                                    <li>Action games are challenging and require the player to stay invested to advance.</li>
-                                                </ul>
-                                            </ul>
-                                        <li>Sports has the second most global sales despite the fact that Wii Sports video game has the most individual sales.</li>
-                                        <li>Strategy has the lowest global sales.</li>
-                                    </ul>
-                                </div>
-                            </body>
-                            <br>
-                            <br>
-                        </div>
-                        <!-- genre and sales -->
-
-                        <!-- platform frequency -->
-                        <div class ="indent">
-                            <h4>Which videogaming platform had the most games produced?</h4>
-                            <br>
-                            <head>
-                                <style>
-                                    .image-container {
-                                        display: flex; /* Use flexbox to control layout */
-                                        align-items: center; /* Vertically align content */
-                                    }
-                            
-                                    .text {
-                                        margin-left: 20px; /* Add some space between text and image */
-                                        float: right; /* Float text to the right */
-                                    }
-                            
-                                    .image {
-                                        float: left; /* Float image to the left */
-                                        margin-right: 20px; /* Add some space between image and text */
-                                    }
-                                </style>
-                            </head>
-                            <body>
-                                <div class="image-container">
-                                    <img src="platform_freq_vg.png" alt="Platform Frequency" class="img-responsive" width="600"/>
-                                    <h5 class="text">Observations:</h5>
-                                    <ul class="text"> 
-                                        <li>Nintendo DS and Playstation produced the most games.</li>
-                                        <li>Why did Nintendo DS and Playstation produce the most games?</li>
-                                            <ul>
-                                                <li>Nintendo DS and a Playstation 2 are the most used platforms.</li>
-                                            </ul>
-                                    </ul>
-                                </div>
-                            </body>
-                            <br>
-                            <br>
-                        </div>
-                        <!-- platform frequency -->
-
-                        <!-- platform and sales -->
-                        <div class ="indent">
-                            <h4>Which videogaming platform had the most games sold?</h4>
-                            <br>
-                            <head>
-                                <style>
-                                    .image-container {
-                                        display: flex; /* Use flexbox to control layout */
-                                        align-items: center; /* Vertically align content */
-                                    }
-                            
-                                    .text {
-                                        margin-left: 20px; /* Add some space between text and image */
-                                        float: right; /* Float text to the right */
-                                    }
-                            
-                                    .image {
-                                        float: left; /* Float image to the left */
-                                        margin-right: 20px; /* Add some space between image and text */
-                                    }
-                                </style>
-                            </head>
-                            <body>
-                                <div class="image-container">
-                                    <img src="platforn_sales_vg.png" alt="Platform and Sales" class="img-responsive" width="600"/>
-                                    <h5 class="text">Observations:</h5>
-                                    <ul class="text"> 
-                                        <li>The Playstation 2 had the most number of global sales.</li>
-                                            <ul>
-                                                <li>Why did the Playstation 2 have the highest number of sales globally?</li>
-                                                    <ul>
-                                                        <li>It was successful due to its support of DVD players at the time it was released, when DVD players were expensive.</li>
-                                                        <li>It was one of the cheapest DVD players, while also allowing users to play games.</li>
-                                                        <a href="https://osgamers.com/frequently-asked-questions/why-was-playstation-2-so-successful">[Source]</a>
-                                                    </ul>
-                                            </ul>
-                                        <li>The video game platforms with the highest amount of sales will continue to be at the top since most game developers will want to host their games on the most used platforms.</li>
-                                    </ul>
-                                </div>
-                            </body>
-                            <br>
-                            <br>
-                        </div>
-                        <!-- platform and sales -->
-
-                        <!-- region sales -->
-                        <div class ="indent">
-                            <h4>Which regions have sold the most videogames?</h4>
-                            <br>
-                            <head>
-                                <style>
-                                    .image-container {
-                                        display: flex; /* Use flexbox to control layout */
-                                        align-items: center; /* Vertically align content */
-                                    }
-                            
-                                    .text {
-                                        margin-left: 20px; /* Add some space between text and image */
-                                        float: right; /* Float text to the right */
-                                    }
-                            
-                                    .image {
-                                        float: left; /* Float image to the left */
-                                        margin-right: 20px; /* Add some space between image and text */
-                                    }
-                                </style>
-                            </head>
-                            <body>
-                                <div class="image-container">
-                                    <img src="region_sales_vg.png" alt="Region Sales" class="img-responsive" width="600"/>
-                                    <h5 class="text">Observations:</h5>
-                                    <ul class="text"> 
-                                        <li>North America (NA) make up half of videogame sales.</li>
-                                        <li>North America (NA) has the highest population in comparison to the other regions, based off 2021 data.</li>
-                                    </ul>
-                                </div>
-                            </body>
-                            <br>
-                            <br>
-                        </div>
-                        <!-- region sales -->
-
-                        <!-- yearly sales -->
-                        <div class ="indent">
-                            <h4>How much videogames had been sold over the years? (Till 2017)</h4>
-                            <br>
-                            <head>
-                                <style>
-                                    .image-container {
-                                        display: flex; /* Use flexbox to control layout */
-                                        align-items: center; /* Vertically align content */
-                                    }
-                            
-                                    .text {
-                                        margin-left: 20px; /* Add some space between text and image */
-                                        float: right; /* Float text to the right */
-                                    }
-                            
-                                    .image {
-                                        float: left; /* Float image to the left */
-                                        margin-right: 20px; /* Add some space between image and text */
-                                    }
-                                </style>
-                            </head>
-                            <body>
-                                <div class="image-container">
-                                    <img src="yearly_sales_vg.png" alt="Region Sales" class="img-responsive" width="600"/>
-                                    <h5 class="text">Observations:</h5>
-                                    <ul class="text"> 
-                                        <li>Number of video game sales over the years have increased.</li>
-                                        <li>The video game with the highest number of sales is Wii Sports.</li>
-                                        <li>Game development has improved overtime which is a huge effect on the trend.</li>
-                                        <li>Video games are a social game which means that users will constantly market it intentionally or unintentionally to their friends.</li>
-                                    </ul>
-                                </div>
-                            </body>
-                            <hr>
-                            <br>
-                            <br>
-                        </div>
-                        <!-- yearly sales -->
-
-                    </div>
-                    <!-- end videogame container-->
-
-                    <!-- sephora container -->
-                    <div class="sephora">
-                        <style>
-                            .indent {
-                                margin-left: 150px; 
-                                margin-right: 150px;
-                            }
-                            hr {
-                                border: none; /* Remove the default border */
-                                height: 1px; /* Set the height of the line */
-                                background-color: #aaaaaa; /* Set the line color */
-                                margin: 20px 0; /* Add margin for spacing */
-                            }
-                        </style>
-                        <div class="indent">
-                            <h4>Sephora Company Background:</h4>
-                            <p>
-                                Sephora is a retail establishment specializing in comsmetics distribution and is commited to promote beauty.
-                                Sephora puts an unwavering focus on exceeding customer expectations by offering carefully curated beauty products.
-                            </p>
-                            <hr>
-                        </div>
-                            <div class ="indent">
-                                <h5>Goal:</h5>
-                                <p>
-                                    Develop a deeper insight into the relationship between customers and products for an optimized marketing plan.
-                                </p>
-                                <h5>Analytics Business Task:</h5>
-                                <p> Inspect Sephora's online store data by taking a look into their products, prices, brands, and reviews.</p>
-                                <h5>Result:</h5>
-                                <hr>
-                            <div>
-                                <h4>Analysis:</h4>
                             </div>
-                        </div>
+                        </a>
                     </div>
-                    <!-- end sephora container-->
+                    <!-- end single work -->
+
+                    <!-- single work -->
+                    <div class="col-md-4 col-sm-12 superstore">
+                        <a href="superstore.html" class="portfolio_item">
+                            <img src="superstore_preview.png" alt="image" class="img-responsive" />
+                            <div class="portfolio_item_hover">
+                                <div class="portfolio-border clearfix">
+                                    <div class="item_info">
+                                        <span>Superstore</span>
+                                        <em>Click Here</em>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- end single work -->
+
+                    <!-- single work -->
+                    <div class="col-md-4 col-sm-12 bellabeat">
+                        <a href="single-project.html" class="portfolio_item">
+                            <img src="bellabeat_preview.png" alt="image" class="img-responsive" />
+                            <div class="portfolio_item_hover">
+                                <div class="portfolio-border clearfix">
+                                    <div class="item_info">
+                                        <span>Bellabeat</span>
+                                        <em>Click Here</em>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- end single work -->
+
                 </div>
                 <!-- end portfolio_container -->
             </div>
@@ -989,7 +153,7 @@
     <!-- footer -->
     <footer>
         <div class="container-fluid">
-            <p class="copyright">© Beatriz Delos Santos 2023</p>
+            <p class="copyright">© Beatriz Delos Santos</p>
         </div>
     </footer>
     <!-- end footer -->
