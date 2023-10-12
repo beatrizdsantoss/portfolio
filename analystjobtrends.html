@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Box personal portfolio Template</title>
+    <link rel="icon" href="img/fav.png" type="image/x-icon">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="ionicons/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- main css -->
+    <link href="css/style.css" rel="stylesheet">
+
+
+    <!-- modernizr -->
+    <script src="js/modernizr.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="pre-container">
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+        </div>
+    </div>
+    <!-- end Preloader -->
+
+    <div class="container-fluid">
+       <!-- box-header -->
+        <header class="box-header">
+            <!-- box-nav -->
+            <a class="box-primary-nav-trigger" href="#0">
+                <span class="box-menu-text">Menu</span><span class="box-menu-icon"></span>
+            </a>
+            <!-- box-primary-nav-trigger -->
+        </header>
+        <!-- end box-header -->
+        
+        <!-- nav -->
+        <nav>
+            <ul class="box-primary-nav">
+                <li class="box-label">About me</li>
+
+                <li><a href="index.html">Intro</a></li>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="portfolio.html">portfolio</a> <i class="ion-ios-circle-filled color"></i></li>
+                <li><a href="contact.html">contact me</a></li>
+            </ul>
+        </nav>
+        <!-- end nav -->
+    </div>
+    
+    <!-- top-bar -->
+    <div class="top-bar">
+        <h1>Data Analytics Job Posting Trends Project</h1>
+        <p><a href="portfolio.html">portfolio</a> / Analytic Trends</p>
+    </div>
+    <!-- end top-bar -->
+    
+    <!-- main-container -->
+    <div class="container main-container">
+
+        <div class="col-md-12">
+            <h2 class="text-uppercase">U.S. Data Analytics Job Posting Trends</h2>
+            <h5>October 2023</h5>
+            <div class="h-30"></div>
+        </div>
+
+        <div class="col-md-12">
+            <div>
+                <h4>Background:</h4>
+                <p>
+                    The videogame market has grown over the years dating back to the late 1900s (from the dataset)
+                    and is expected to compound grow for the coming years. The dataset ranges globally and include various genres and gaming platforms.
+                </p>
+                <hr>
+            </div>
+                <div>
+                    <h5>Goal:</h5>
+                    <p>
+                        Find trends and patterns from historical data about the videogame market up to the year 2017. 
+                        Understand why the videogame industry is thriving and will continue to flourish.
+                    </p>
+                    <h5>Analytics Business Task:</h5>
+                    <p>
+                        Analyze the sale performances based on year, brand, region, and genre to gain insights on historical videogame market.
+                    </p>
+                    <h5>Limitations:</h5>
+                    <p>To enhance the depth of the data analysis, additiontional information about videogame prices and its associated profits can unlock more patterns that the current data may not display. 
+                        Furthermore, missing data was discovered and was dealt with by inputting data found through research and carefully removing entries that was not relevant (265 out of 16,598 entries deleted).
+                    </p>
+                    <h5>Results/Suggestions:</h5>
+                    <p>With continous advancements in technology, it is undeniable that videogame industry will progress in the coming years with more advanced graphics, user experience, and new ways to keep players entertained. 
+                        The supply and demand for videogames has been on the raise since the late 1900s and is predicted to continue based on the analysis below. 
+                        Action games have the most sales out of 12 different genres due to the balance between challenges and room for progression that players seem to be invested in with their time and money. 
+                        Multiplayer games (includes most of the top videogame genres), have higher sales as players invite others and foster more interactions. 
+                        As videogames become more culturally accepted and proceeds to improve, the industry is destined for a tremendous growth. 
+                        Companies in the industry and new creators must be viligant in market changes and trends.
+                    </p>
+                    <h5>Sources:</h5>
+                    <a href="https://www.kaggle.com/datasets/gregorut/videogamesales">Data Source</a>
+                    <br>
+                    <a href="https://www.grandviewresearch.com/industry-analysis/video-game-market">Background on the Videogame Market</a>
+                    <hr>
+            </div>
+
+            <!-- genre frequency -->
+            <div>
+                <h4>Which genre has been produced the most?</h4>
+                <br>
+                <head>
+                    <style>
+                        .image-container {
+                            display: flex; /* Use flexbox to control layout */
+                            align-items: center; /* Vertically align content */
+                        }
+                
+                        .image {
+                            float: left; /* Float image to the left */
+                            margin-right: 20px; /* Add some space between image and text */
+                        }
+                    </style>
+                </head>
+                <body>
+                    <div class="image-container">
+                        <img src="genre_freq_vg.png" alt="Genre Frequency" class="img-responsive" width="600"/>
+                        <h5>Observations:</h5>
+                        <ul> 
+                            <li>Action video games was most produced between the years 1975 and 2017.
+                                <ul>
+                                    <li>High demand for action games.</li>
+                                    <li>Why are action games produced the most?</li>
+                                        <ul>
+                                            <li>The difficulty and competitiveness of the game may persuade the player to make in-game purchases.</li>
+                                            <li>The more money the game makes, the more likely the company will produce more action games.</li>
+                                        </ul>
+                                </ul>
+                            </li>
+                            <li>Least produced genre are puzzle games.</li>
+                        </ul>
+                    </div>
+                </body>
+                <br>
+                <br>
+            </div>
+            <!-- genre frequency -->
+        </div>
+    </div>
+    <!-- end main-container -->
+
+
+    <!-- footer -->
+    <footer>
+        <div class="container-fluid">
+            <p class="copyright">© Beatriz Delos Santos 2023</p>
+        </div>
+    </footer>
+    <!-- end footer -->
+    
+    <!-- back to top -->
+    <a href="#0" class="cd-top"><i class="ion-android-arrow-up"></i></a>
+    <!-- end back to top -->
+
+
+
+
+    <!-- jQuery -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <!--  plugins -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/animated-headline.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+
+
+    <!--  custom script -->
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>
